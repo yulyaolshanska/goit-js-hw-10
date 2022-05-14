@@ -56,9 +56,13 @@ body {
 }
 
 .countries-list-item {
+  padding: 5px 15px;
+  /* margin-bottom: 5px; */
   display: flex;
-   
+   width: 300px;
     align-items: center;
+    border-bottom: 1px solid green;
+   
 }
 
 .country-name{
