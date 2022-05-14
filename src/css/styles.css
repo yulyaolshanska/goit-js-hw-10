@@ -54,3 +54,13 @@ body {
     font-size: 23px;
     margin-left: 10px;
 }
+
+.countries-list-item {
+  display: flex;
+   
+    align-items: center;
+}
+
+.country-name{
+  margin-left: 10px;
+}

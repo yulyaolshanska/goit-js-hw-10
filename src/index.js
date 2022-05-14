@@ -35,17 +35,18 @@ function onFormInput(evt) {
            
         } else {
             refs.countryInfo.innerHTML = "";
-            refs.countryList.innerHTML = renderCountryList(countries);
+            refs.countryList.insertAdjacentHTML("afterbegin", renderCountryList(countries)) 
         }
-        return countries
+        
         
     })
 }
 
 
     function renderCountryList(countries) {
-        return countries.map(country => `<li><img src="${country.flags.svg}" width=30 height=20 alt="${country.name.common}"><p>${country.name.common}</p></li`).join("")
+        return countries.map(country => `<li class="countries-list-item"><img src="${country.flags.svg}" width=30 height=20 alt="${country.name.common}"><p class="country-name">${country.name.common}</p></li>`).join("");
     }
+
 
     function renderCountryInfo(countries) {
         return countries.map(country =>
